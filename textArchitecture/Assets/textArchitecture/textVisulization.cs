@@ -31,7 +31,7 @@ public class textVisulization : MonoBehaviour
     void Start()
     {
         ArchSliderScale.value = 0.5f;
-        textScale = 1f;
+        textSliderScale.value = 5f;
         //Debug.Log(items["textDatas"]);
         //StartCoroutine(GetText());
         StartCoroutine(ReadJsonHTTP());
