@@ -10,9 +10,10 @@ using System.Collections;
 public class textVisulization : MonoBehaviour
 {
     public GameObject myPrefab;
+    public GameObject effectPrefab;
     GameObject[] textObjects;
     public int resolution;
-    
+
     //public TextAsset jsonFile;
     //public string[] jsonArray;
     //public ListItem items;
@@ -35,12 +36,16 @@ public class textVisulization : MonoBehaviour
         //Debug.Log(items["textDatas"]);
         //StartCoroutine(GetText());
         StartCoroutine(ReadJsonHTTP());
+        StartCoroutine(initialText());
+        StartCoroutine(newInstanceEffect());
 
 
 
         //Debug.Log(items["textDatas"]);
         //items = JsonUtility.FromJson<ListItem>(jsonFile.text);
         //print(json.items);
+
+        /*
         textObjects = new GameObject[resolution];
         prefebPosition = new Vector3[resolution];
         prefebRotation = new Quaternion[resolution];
@@ -50,7 +55,7 @@ public class textVisulization : MonoBehaviour
             GameObject textObject = textObjects[i] = Instantiate(myPrefab);
             textObjects[i].GetComponent<Transform>().SetParent(transform);
             prefebPosition[i] = new Vector3(0, 0, 0) * architectureScale;
-            prefebRotation[i] = Quaternion.Euler(0,0,0);
+            prefebRotation[i] = Quaternion.Euler(0, 0, 0);
             prefebScale[i] = new Vector3(0, 0, 0) * textScale;
             //prefebPosition = new Vector3[i](0, Random.Range(0f,1f), 0) * architectureScale;
 
@@ -58,63 +63,63 @@ public class textVisulization : MonoBehaviour
             //prefebPosition[i] = new Vector3(0, Random.Range(0f, 1f), 0) * architectureScale;
             //Instantiate(myPrefab);
         }
+        */
+
+        /*
+        textObjects = new GameObject[items.textDatas.Length];
+        for (int i = 0; i < items.textDatas.Length; i++)
+        {
+            //Debug.Log(items.textDatas[i].Input);
+            //Vector3 prefebPosition = new Vector3(items.textDatas[i].X, items.textDatas[i].Y, items.textDatas[i].Z) * architectureScale;
+            //Quaternion prefebRotation = Quaternion.Euler(items.textDatas[i].rX, items.textDatas[i].rY, items.textDatas[i].rZ);
+            //Vector3 prefebScale = new Vector3(items.textDatas[i].sX, items.textDatas[i].sY, items.textDatas[i].sZ);
 
 
-            /*
-            textObjects = new GameObject[items.textDatas.Length];
-            for (int i = 0; i < items.textDatas.Length; i++)
+            GameObject textObject = textObjects[i] = Instantiate(myPrefab);
+            textObjects[i].GetComponent<Transform>().SetParent(transform);
+            //textObjects[i].GetComponent<Transform>().localPosition = prefebPosition;
+            //textObjects[i].GetComponent<Transform>().localRotation = prefebRotation;
+            //textObjects[i].GetComponent<Transform>().localScale = prefebScale;
+            //Instantiate(myPrefab, prefebPosition, prefebRotation);
+
+
+            textmeshPro.SetText(items.textDatas[i].Input);
+
+            if (items.textDatas[i].Color == 4)
             {
-                //Debug.Log(items.textDatas[i].Input);
-                //Vector3 prefebPosition = new Vector3(items.textDatas[i].X, items.textDatas[i].Y, items.textDatas[i].Z) * architectureScale;
-                //Quaternion prefebRotation = Quaternion.Euler(items.textDatas[i].rX, items.textDatas[i].rY, items.textDatas[i].rZ);
-                //Vector3 prefebScale = new Vector3(items.textDatas[i].sX, items.textDatas[i].sY, items.textDatas[i].sZ);
-
-
-                GameObject textObject = textObjects[i] = Instantiate(myPrefab);
-                textObjects[i].GetComponent<Transform>().SetParent(transform);
-                //textObjects[i].GetComponent<Transform>().localPosition = prefebPosition;
-                //textObjects[i].GetComponent<Transform>().localRotation = prefebRotation;
-                //textObjects[i].GetComponent<Transform>().localScale = prefebScale;
-                //Instantiate(myPrefab, prefebPosition, prefebRotation);
-
-                
-                textmeshPro.SetText(items.textDatas[i].Input);
-
-                if (items.textDatas[i].Color == 4)
-                {
-                    textmeshPro.color = new Color32(245, 215, 66, 255);
-                }
-                else if (items.textDatas[i].Color == 3)
-                {
-                    textmeshPro.color = new Color32(240, 153, 72, 255);
-                }
-                else if (items.textDatas[i].Color == 2)
-                {
-                    textmeshPro.color = new Color32(167, 222, 95, 255);
-                }
-                else if (items.textDatas[i].Color == 1)
-                {
-                    textmeshPro.color = new Color32(255, 82, 82, 255);
-                }
-                else if (items.textDatas[i].Color == 0)
-                {
-                    textmeshPro.color = new Color32(115, 47, 47, 255);
-                }
+                textmeshPro.color = new Color32(245, 215, 66, 255);
+            }
+            else if (items.textDatas[i].Color == 3)
+            {
+                textmeshPro.color = new Color32(240, 153, 72, 255);
+            }
+            else if (items.textDatas[i].Color == 2)
+            {
+                textmeshPro.color = new Color32(167, 222, 95, 255);
+            }
+            else if (items.textDatas[i].Color == 1)
+            {
+                textmeshPro.color = new Color32(255, 82, 82, 255);
+            }
+            else if (items.textDatas[i].Color == 0)
+            {
+                textmeshPro.color = new Color32(115, 47, 47, 255);
+            }
 
 
 
 
-        }
-             */
+    }
+         */
 
-        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         textVisualizer();
-        ReadJsonHTTP();
+        //ReadJsonHTTP();
         architectureScale = ArchSliderScale.value;
         textScale = textSliderScale.value;
 
@@ -122,7 +127,8 @@ public class textVisulization : MonoBehaviour
 
     IEnumerator ReadJsonHTTP()
     {
-        while (true) {
+        while (true)
+        {
             var client = new HttpClient();
 
             // Send the GET request to the specified uri
@@ -141,14 +147,14 @@ public class textVisulization : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
 
-       
+
     }
 
     void textVisualizer()
     {
         if (items != null)
         {
-
+            //resolution = items["textDatas"].Count;
             //print(items["textDatas"]);
             for (int i = 0; i < resolution; i++)
             {
@@ -201,30 +207,100 @@ public class textVisulization : MonoBehaviour
         }
     }
 
- 
-    IEnumerator GetText()
+    IEnumerator initialText()
     {
-        UnityWebRequest www = UnityWebRequest.Get("http://68.183.206.206:8000/text.json");
-        yield return www.Send();
-
-        if (www.isNetworkError)
+        yield return items != null;
+        //resolution = items["textDatas"].Count;
+        textObjects = new GameObject[resolution];
+        prefebPosition = new Vector3[resolution];
+        prefebRotation = new Quaternion[resolution];
+        prefebScale = new Vector3[resolution];
+        for (int i = 0; i < resolution; i++)
         {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            //string itemsData = JsonUtility.ToJson(www.downloadHandler.text);
-            // Show results as text
-            items = JSON.Parse(www.downloadHandler.text);
-            //Debug.Log(www.downloadHandler.text);
-            Debug.Log(items["textDatas"][10]["Input"]);
-            Debug.Log(items["textDatas"]);
+            GameObject textObject = textObjects[i] = Instantiate(myPrefab);
+            textObjects[i].GetComponent<Transform>().SetParent(transform);
 
-            // Or retrieve results as binary data
-            //byte[] results = www.downloadHandler.data;
+
+
+            prefebPosition[i] = new Vector3(0, 0, 0) * architectureScale;
+            prefebRotation[i] = Quaternion.Euler(0, 0, 0);
+            prefebScale[i] = new Vector3(0, 0, 0) * textScale;
+            //prefebPosition = new Vector3[i](0, Random.Range(0f,1f), 0) * architectureScale;
+
+            //prefebPosition[i]= new Vector3(0, Random.Range(0f, 1f), 0) * architectureScale;
+            //prefebPosition[i] = new Vector3(0, Random.Range(0f, 1f), 0) * architectureScale;
+            //Instantiate(myPrefab);
         }
+
     }
 
-}
+    public IEnumerator newInstanceEffect()
+    {
+        yield return new WaitForSeconds(0.6f);
+        
+        while (true)
+        {
+            int count = items["textDatas"].Count;
+            //yield return count != items["textDatas"].Count;
+            yield return new WaitUntil(() => count != items["textDatas"].Count);
+            prefebPosition[count] = new Vector3(items["textDatas"][count]["X"], items["textDatas"][count]["Y"], items["textDatas"][count]["Z"]) * architectureScale;
+            prefebRotation[count] = Quaternion.Euler(0, items["textDatas"][count]["rY"] * 360f, 0);
+            prefebScale[count] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
+            GameObject newTextObject = Instantiate(effectPrefab);newTextObject.GetComponent<Transform>().SetParent(transform);
+            newTextObject.GetComponent<Transform>().SetParent(transform);
+            newTextObject.transform.localPosition = prefebPosition[count];
+            newTextObject.transform.localRotation = prefebRotation[count];
+            newTextObject.transform.localScale = prefebScale[count]; 
+            
+            newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["Input"]);
+            newTextObject.GetComponent<TextMeshPro>().color = new Color32(158, 228, 255, 255);
+            print(count);
+
+            yield return new WaitForSeconds(10f);
+            Destroy(newTextObject);
+            
+        }
+        
+
+        /*
+        GameObject newTextObject = Instantiate(effectPrefab);
+
+        newTextObject.transform.position = prefebPosition[count];
+        */
+    }
+
+ 
+
+
+
+
+
+
+        /*
+        IEnumerator GetText()
+        {
+            UnityWebRequest www = UnityWebRequest.Get("http://68.183.206.206:8000/text.json");
+            yield return www.Send();
+
+            if (www.isNetworkError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                //string itemsData = JsonUtility.ToJson(www.downloadHandler.text);
+                // Show results as text
+                items = JSON.Parse(www.downloadHandler.text);
+                //Debug.Log(www.downloadHandler.text);
+                Debug.Log(items["textDatas"][10]["Input"]);
+                Debug.Log(items["textDatas"]);
+
+                // Or retrieve results as binary data
+                //byte[] results = www.downloadHandler.data;
+            }
+        }
+        */
+
+    }
 
 

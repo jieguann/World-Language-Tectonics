@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964124, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1898,7 +1898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669a562ee071ee541bf1bf4902979ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPrefab: {fileID: 7531819558009625676, guid: c6d711f303f29004599bcb64a5f98822, type: 3}
+  myPrefab: {fileID: 7531819558009625676, guid: c8f6a16c5805be342be0b2d5140fd9d7, type: 3}
+  effectPrefab: {fileID: 7531819558009625676, guid: 71d249e0b0ed72d4aa4ae93c595b6c7b, type: 3}
   resolution: 100
   architectureScale: 1
   ArchSliderScale: {fileID: 429463794}
