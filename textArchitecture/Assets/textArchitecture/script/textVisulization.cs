@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using SimpleJSON;
 using CI.HttpClient;
 using System.Collections;
-
+using UnityEngine.Rendering.PostProcessing;
 public class textVisulization : MonoBehaviour
 {
     public GameObject myPrefab;
@@ -28,11 +28,14 @@ public class textVisulization : MonoBehaviour
     public Vector3[] prefebPosition;
     public Quaternion[] prefebRotation;
     public Vector3[] prefebScale;
+    //post effect
+    public PostProcessVolume pVolume;
     // Start is called before the first frame update
     void Start()
     {
         ArchSliderScale.value = 0.5f;
         textSliderScale.value = 5f;
+        pVolume.weight = 0;
         //Debug.Log(items["textDatas"]);
         //StartCoroutine(GetText());
         StartCoroutine(ReadJsonHTTP());
@@ -254,9 +257,12 @@ public class textVisulization : MonoBehaviour
             
             newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["Input"]);
             newTextObject.GetComponent<TextMeshPro>().color = new Color32(158, 228, 255, 255);
+            pVolume.weight = 1;
+            newTextObject.layer = 6;
             print(count);
 
             yield return new WaitForSeconds(10f);
+            pVolume.weight = 0;
             Destroy(newTextObject);
             
         }
