@@ -14,6 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 4124290682811486593}
+  - {fileID: 788593170908769143}
+--- !u!114 &788593170908769143
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 0
+    value: 10
+  aperture:
+    overrideState: 0
+    value: 5.6
+  focalLength:
+    overrideState: 0
+    value: 50
+  kernelSize:
+    overrideState: 0
+    value: 1
 --- !u!114 &4124290682811486593
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -67,28 +96,28 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 0
-    value: 0
+    value: -8.2
   tint:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -100
   colorFilter:
     overrideState: 0
     value: {r: 0, g: 1, b: 0.5597489, a: 1}
   hueShift:
-    overrideState: 1
+    overrideState: 0
     value: 151
   saturation:
     overrideState: 1
-    value: 62.6
+    value: -89.1
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0.21
+    overrideState: 1
+    value: -3.42
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 93.4
   mixerRedOutRedIn:
     overrideState: 0
     value: 83
@@ -117,11 +146,11 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 0, y: 0.17283297, z: 1, w: 0}
   gamma:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 0.7622514, y: 1, z: 0.33722836, w: 0}
   gain:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}

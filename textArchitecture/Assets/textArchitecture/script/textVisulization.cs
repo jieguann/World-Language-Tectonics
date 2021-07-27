@@ -8,7 +8,11 @@ using CI.HttpClient;
 using System.Collections;
 using UnityEngine.Rendering.PostProcessing;
 public class textVisulization : MonoBehaviour
-{
+{   //text control
+    public textControHTTP textControl;
+    /// <summary>
+    /// /////
+    /// </summary>
     public GameObject myPrefab;
     public GameObject effectPrefab;
     GameObject[] textObjects;
@@ -20,6 +24,7 @@ public class textVisulization : MonoBehaviour
     JSONNode items;
     //int index;
     public float architectureScale;
+    public float architectureScaleY;
     public Slider ArchSliderScale;
     public float textScale;
     public Slider textSliderScale;
@@ -33,8 +38,8 @@ public class textVisulization : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ArchSliderScale.value = 0.5f;
-        textSliderScale.value = 5f;
+        //ArchSliderScale.value = 0.5f;
+        //textSliderScale.value = 5f;
         pVolume.weight = 0;
         //Debug.Log(items["textDatas"]);
         //StartCoroutine(GetText());
@@ -123,8 +128,11 @@ public class textVisulization : MonoBehaviour
 
         textVisualizer();
         //ReadJsonHTTP();
-        architectureScale = ArchSliderScale.value;
-        textScale = textSliderScale.value;
+        //architectureScale = ArchSliderScale.value;
+        //textScale = textSliderScale.value;
+        architectureScale = textControl.ArchScale;
+        architectureScaleY = textControl.ArchScaleY;
+        textScale = textControl.textScale;
 
     }
 
@@ -147,6 +155,8 @@ public class textVisulization : MonoBehaviour
                 }
 
             });
+
+
             yield return new WaitForSeconds(0.5f);
         }
 
@@ -167,7 +177,7 @@ public class textVisulization : MonoBehaviour
                     //print(items["textDatas"][0]["Input"]);
                     //textmeshPro.SetText(items["textDatas"][i]["Input"]);
                     textmeshPro.SetText(items["textDatas"][i]["Input"]);
-                    prefebPosition[i] = new Vector3(items["textDatas"][i]["X"], items["textDatas"][i]["Y"], items["textDatas"][i]["Z"]) * architectureScale;
+                    prefebPosition[i] = new Vector3(items["textDatas"][i]["X"] * architectureScale, items["textDatas"][i]["Y"]* architectureScaleY, items["textDatas"][i]["Z"] * architectureScale);
                     prefebRotation[i] = Quaternion.Euler(0, items["textDatas"][i]["rY"] * 360f, 0);
                     prefebScale[i] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
                     //print(items["textDatas"][resolution]["Input"]);
@@ -246,7 +256,7 @@ public class textVisulization : MonoBehaviour
             int count = items["textDatas"].Count;
             //yield return count != items["textDatas"].Count;
             yield return new WaitUntil(() => count != items["textDatas"].Count);
-            prefebPosition[count] = new Vector3(items["textDatas"][count]["X"], items["textDatas"][count]["Y"], items["textDatas"][count]["Z"]) * architectureScale;
+            prefebPosition[count] = new Vector3(items["textDatas"][count]["X"] * architectureScale, items["textDatas"][count]["Y"]* architectureScaleY, items["textDatas"][count]["Z"] * architectureScale);
             prefebRotation[count] = Quaternion.Euler(0, items["textDatas"][count]["rY"] * 360f, 0);
             prefebScale[count] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
             GameObject newTextObject = Instantiate(effectPrefab);newTextObject.GetComponent<Transform>().SetParent(transform);
@@ -256,12 +266,19 @@ public class textVisulization : MonoBehaviour
             newTextObject.transform.localScale = prefebScale[count]; 
             
             newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["Input"]);
-            newTextObject.GetComponent<TextMeshPro>().color = new Color32(158, 228, 255, 255);
+            newTextObject.GetComponent<TextMeshPro>().color = new Color32(255, 255, 255, 255);
             pVolume.weight = 1;
             newTextObject.layer = 6;
             print(count);
-
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(2f);
+            pVolume.weight = 0.8f;
+            yield return new WaitForSeconds(2f);
+            pVolume.weight = 0.6f;
+            yield return new WaitForSeconds(2f);
+            pVolume.weight = 0.4f;
+            yield return new WaitForSeconds(2f);
+            pVolume.weight = 0.2f;
+            yield return new WaitForSeconds(2f);
             pVolume.weight = 0;
             Destroy(newTextObject);
             

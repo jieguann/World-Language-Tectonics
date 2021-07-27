@@ -1154,7 +1154,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555646538}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &555646541
 Camera:
   m_ObjectHideFlags: 0
@@ -1627,16 +1627,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669a562ee071ee541bf1bf4902979ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textControl: {fileID: 930322709}
   myPrefab: {fileID: 7531819558009625676, guid: c8f6a16c5805be342be0b2d5140fd9d7, type: 3}
   effectPrefab: {fileID: 7531819558009625676, guid: 71d249e0b0ed72d4aa4ae93c595b6c7b, type: 3}
   resolution: 100
   architectureScale: 1
+  architectureScaleY: 0
   ArchSliderScale: {fileID: 1119038674}
   textScale: 0
   textSliderScale: {fileID: 1908071202}
   prefebPosition: []
   prefebRotation: []
   prefebScale: []
+  pVolume: {fileID: 1647928760}
 --- !u!4 &820609194
 Transform:
   m_ObjectHideFlags: 0
@@ -1663,6 +1666,7 @@ GameObject:
   - component: {fileID: 930322706}
   - component: {fileID: 930322704}
   - component: {fileID: 930322705}
+  - component: {fileID: 930322709}
   m_Layer: 0
   m_Name: Websocket
   m_TagString: Untagged
@@ -1727,6 +1731,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930322709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930322703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f77848fd14e13e4cb993ea737831f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArchScale: 0
+  ArchScaleY: 0
+  textScale: 0
 --- !u!1 &963419212
 GameObject:
   m_ObjectHideFlags: 0
