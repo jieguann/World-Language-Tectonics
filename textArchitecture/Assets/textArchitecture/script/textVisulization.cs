@@ -24,8 +24,9 @@ public class textVisulization : MonoBehaviour
     JSONNode items;
     //int index;
     public float architectureScale;
-    public float architectureScaleY;
     public Slider ArchSliderScale;
+    public float architectureScaleY;
+    public Slider ArchSliderScaleY;
     public float textScale;
     public Slider textSliderScale;
     //text;
@@ -128,11 +129,17 @@ public class textVisulization : MonoBehaviour
 
         textVisualizer();
         //ReadJsonHTTP();
-        //architectureScale = ArchSliderScale.value;
-        //textScale = textSliderScale.value;
-        architectureScale = textControl.ArchScale;
-        architectureScaleY = textControl.ArchScaleY;
-        textScale = textControl.textScale;
+        architectureScale = ArchSliderScale.value;
+        architectureScaleY = ArchSliderScaleY.value;
+        textScale = textSliderScale.value;
+        //architectureScale = textControl.ArchScale;
+        //architectureScaleY = textControl.ArchScaleY;
+        //textScale = textControl.textScale;
+        if(pVolume.weight > 0)
+        {
+            pVolume.weight = pVolume.weight - 0.004f;
+        }
+        print(pVolume.weight);
 
     }
 
@@ -196,15 +203,17 @@ public class textVisulization : MonoBehaviour
 
                 if (items["textDatas"][i]["Mood"] == 4)
                 {
-                    textmeshPro.color = new Color32(245, 215, 66, 255);
+                    
+                    textmeshPro.color = new Color32(167, 222, 95, 255);
                 }
                 else if (items["textDatas"][i]["Mood"] == 3)
                 {
-                    textmeshPro.color = new Color32(240, 153, 72, 255);
+                    textmeshPro.color = new Color32(245, 215, 66, 255);
+                    
                 }
                 else if (items["textDatas"][i]["Mood"] == 2)
                 {
-                    textmeshPro.color = new Color32(167, 222, 95, 255);
+                    textmeshPro.color = new Color32(240, 153, 72, 255);
                 }
                 else if (items["textDatas"][i]["Mood"] == 1)
                 {
@@ -249,7 +258,7 @@ public class textVisulization : MonoBehaviour
 
     public IEnumerator newInstanceEffect()
     {
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.1f);
         
         while (true)
         {
@@ -269,7 +278,14 @@ public class textVisulization : MonoBehaviour
             newTextObject.GetComponent<TextMeshPro>().color = new Color32(255, 255, 255, 255);
             pVolume.weight = 1;
             newTextObject.layer = 6;
-            print(count);
+            print(pVolume.weight);
+            //yield return new WaitForSeconds(0.1f);
+            //pVolume.weight = pVolume.weight - 0.1f;
+            yield return new WaitUntil(() => pVolume.weight <= 0);
+            //pVolume.weight = 0;
+            //pVolume.weight = 0;
+            Destroy(newTextObject);
+            /*
             yield return new WaitForSeconds(2f);
             pVolume.weight = 0.8f;
             yield return new WaitForSeconds(2f);
@@ -281,6 +297,7 @@ public class textVisulization : MonoBehaviour
             yield return new WaitForSeconds(2f);
             pVolume.weight = 0;
             Destroy(newTextObject);
+            */
             
         }
         
