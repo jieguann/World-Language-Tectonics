@@ -183,7 +183,7 @@ public class textVisulization : MonoBehaviour
                 {
                     //print(items["textDatas"][0]["Input"]);
                     //textmeshPro.SetText(items["textDatas"][i]["Input"]);
-                    textmeshPro.SetText(items["textDatas"][i]["Input"]);
+                    textmeshPro.SetText(items["textDatas"][i]["randonText"]);
                     prefebPosition[i] = new Vector3(items["textDatas"][i]["X"] * architectureScale, items["textDatas"][i]["Y"]* architectureScaleY, items["textDatas"][i]["Z"] * architectureScale);
                     prefebRotation[i] = Quaternion.Euler(0, items["textDatas"][i]["rY"] * 360f, 0);
                     prefebScale[i] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
