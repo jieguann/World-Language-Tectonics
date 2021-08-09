@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Version: 1.1.0
   m_SourceFontFileGUID: be48e958de3b94d439cc957d3d8e391f
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: be48e958de3b94d439cc957d3d8e391f, type: 3}
-  m_SourceFontFile: {fileID: 0}
-  m_AtlasPopulationMode: 0
+  m_SourceFontFile: {fileID: 12800000, guid: be48e958de3b94d439cc957d3d8e391f, type: 3}
+  m_AtlasPopulationMode: 1
   m_FaceInfo:
     m_FaceIndex: 0
     m_FamilyName: Noto Sans
@@ -4676,7 +4676,8 @@ MonoBehaviour:
   m_FontFeatureTable:
     m_GlyphPairAdjustmentRecords: []
   fallbackFontAssets: []
-  m_FallbackFontAssetTable: []
+  m_FallbackFontAssetTable:
+  - {fileID: 11400000, guid: 798598178ae6fd54185787c6a8046bb7, type: 2}
   m_CreationSettings:
     sourceFontFileName: 
     sourceFontFileGUID: be48e958de3b94d439cc957d3d8e391f
@@ -4742,7 +4743,7 @@ Texture2D:
   m_MipsStripped: 0
   m_TextureFormat: 1
   m_MipCount: 1
-  m_IsReadable: 0
+  m_IsReadable: 1
   m_IsPreProcessed: 0
   m_IgnoreMasterTextureLimit: 0
   m_StreamingMipmaps: 0
