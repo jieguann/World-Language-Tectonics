@@ -98,10 +98,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7C219\u05D5\u05D9\u05D0\u05E4\u7E41\u9AD4\u309397% \u05E4\u05D5\u05D8\u05D7
-    \u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
+  m_text: "\u7C219\u05D5\u05D9\u05D0\u05E4\u7E41\u9AD4\u3093\u03B7\u03BD\u03B9\u03BA\u03AC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b8465e6232976c24988b7734e8caf302, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 76e1a69baf9fefb47a667dd87193c2bc, type: 2}
   m_sharedMaterial: {fileID: -1234045089431854968, guid: b8465e6232976c24988b7734e8caf302, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -165,7 +164,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -83.04001, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 7531819558009625666}
   m_maskType: 0
   _SortingLayer: 0
