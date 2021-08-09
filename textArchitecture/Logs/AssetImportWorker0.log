@@ -1,113 +1,111 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.15f2 (6cf78cb77498) revision 7141260'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1110; Version 2009; 64bit' Language: 'en' Physical Memory: 32666 MB
+OS: 'Windows 10 Home; OS build 19042.1110; Version 2009; 64bit' Language: 'en' Physical Memory: 32683 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Software\Creator\UnityHub\2020.3.15f2\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/ProjectWorking/InteractiveClub/Text-Architecture/textArchitecture
+C:/Users/Jiyuan/Desktop/Text-Architecture/textArchitecture
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51889
-Successfully changed project path to: C:/ProjectWorking/InteractiveClub/Text-Architecture/textArchitecture
-C:/ProjectWorking/InteractiveClub/Text-Architecture/textArchitecture
+55442
+Successfully changed project path to: C:/Users/Jiyuan/Desktop/Text-Architecture/textArchitecture
+C:/Users/Jiyuan/Desktop/Text-Architecture/textArchitecture
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 110.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.15f2 (6cf78cb77498)
-[Subsystems] Discovering subsystems at path C:/Software/Creator/UnityHub/2020.3.15f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/ProjectWorking/InteractiveClub/Text-Architecture/textArchitecture/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Jiyuan/Desktop/Text-Architecture/textArchitecture/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA Quadro RTX 5000 with Max-Q Design (ID=0x1eb5)
+    Renderer: NVIDIA GeForce RTX 2080 Ti (ID=0x1e07)
     Vendor:   
-    VRAM:     16170 MB
-    Driver:   27.21.14.6089
+    VRAM:     11048 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = 'C:/Software/Creator/UnityHub/2020.3.15f2/Editor/Data/Managed'
-Mono path[1] = 'C:/Software/Creator/UnityHub/2020.3.15f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Software/Creator/UnityHub/2020.3.15f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Software/Creator/UnityHub/2020.3.15f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002272 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003893 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 83.98 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 69.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.005 seconds
+- Completed reload, in  1.253 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2005ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (1253ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (433ms)
-			LoadAssemblies (50ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (199ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (163ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (63ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009152 seconds.
+Registered in 0.010752 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 92.28 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-UnauthorizedAccessException: Access to the path "C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\BurstCache\JIT\4a1f22c5e573185cd18705de5ced45b8.dll" is denied.
-  at System.IO.File.Delete (System.String path) [0x00073] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at Burst.Compiler.IL.Jit.JitCacheManager.DeleteCacheIfBurstVersionChanged () [0x0004c] in <a4513241bf164fe2822095b92896cd81>:0 
-  at Burst.Compiler.IL.Jit.JitCacheManager..ctor (Burst.Compiler.IL.DebugInfo.PortablePdbCache pdbCache, System.String libraryCacheFolderName) [0x00035] in <a4513241bf164fe2822095b92896cd81>:0 
-  at Burst.Compiler.IL.Jit.JitCompilerService..ctor (System.Int32 numberOfThreads, System.String libraryCacheFolderName) [0x00086] in <a4513241bf164fe2822095b92896cd81>:0 
-  at Burst.Compiler.IL.Jit.JitCompilerService..ctor () [0x00000] in <a4513241bf164fe2822095b92896cd81>:0 
-Unity.Burst.LowLevel.BurstCompilerService:InitializeInternal(String, ExtractCompilerFlags)
-Unity.Burst.LowLevel.BurstCompilerService:Initialize(String, ExtractCompilerFlags)
-Unity.Burst.Editor.BurstLoader:.cctor()
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+Error: Could not load signature of UnityEditor.XR.ARKit.XcodeAssetCatalog:WriteAndAddToPBXProject due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 
-Unexpected error while trying to initialize the burst JIT compiler: Unexpected exception occured while initializing burst JitCompilerService
+Unloading broken assembly Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll, this assembly can cause crashes in the runtime
+
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 69.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-Unity.Burst.LowLevel.BurstCompilerService:Initialize (string,Unity.Burst.LowLevel.BurstCompilerService/ExtractCompilerFlags)
-Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.4.4/Editor/BurstLoader.cs:126)
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:102)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:183)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:130)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
 System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-(Filename: Library/PackageCache/com.unity.burst@1.4.4/Editor/BurstLoader.cs Line: 126)
+[Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs line 102]
 
-System.InvalidOperationException: Burst failed to compile the function pointer `Int32 DoGetCSRTrampoline()`
-  at Unity.Burst.BurstCompiler.Compile[T] (T delegateObj, System.Boolean isFunctionPointer) [0x0014f] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:227 
-  at Unity.Burst.BurstCompiler.CompileFunctionPointer[T] (T delegateMethod) [0x00006] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:119 
-  at Unity.Burst.Intrinsics.X86.CompileManagedCsrAccessors () [0x00000] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\Intrinsics\x86\Csr.cs:245 
-  at Unity.Burst.Editor.BurstLoader..cctor () [0x00161] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Editor\BurstLoader.cs:206 
+UnityEngine.UnityException: Creating asset at path Assets\XR\Settings\AR Kit Settings.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UnityEditor.XR.Management.EditorUtilities.CreateScriptableObjectInstance (System.String typeName, System.String path) [0x00031] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\EditorUtilities.cs:102 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage package, System.String packageName, System.String settingsType) [0x0002e] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:183 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage package, UnityEditor.XR.Management.Metadata.IXRPackageMetadata packageMetadata) [0x00017] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:130 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage package) [0x00030] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:118 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.BeginPackageInitialization () [0x0008f] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:87 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap..cctor () [0x00030] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:50 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -115,45 +113,45 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.431 seconds
+- Completed reload, in  2.437 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2432ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (2438ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (2221ms)
-			LoadAssemblies (111ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (2247ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (355ms)
+			SetupTypeCache (313ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1529ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (1643ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (1229ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (1393ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4645 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 195.0 MB.
-System memory in use after: 194.6 MB.
+Unloading 4649 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 194.1 MB.
+System memory in use after: 193.7 MB.
 
-Unloading 265 unused Assets to reduce memory usage. Loaded Objects now: 5059.
-Total: 20.041700 ms (FindLiveObjects: 0.507000 ms CreateObjectMapping: 0.245700 ms MarkObjects: 18.092000 ms  DeleteObjects: 1.192900 ms)
+Unloading 265 unused Assets to reduce memory usage. Loaded Objects now: 5065.
+Total: 9.631900 ms (FindLiveObjects: 0.341500 ms CreateObjectMapping: 0.209200 ms MarkObjects: 8.645600 ms  DeleteObjects: 0.434700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -162,43 +160,148 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/MegaFiers/MegaLiner Scene
-  artifactKey: Guid(7043731714088be4890004747092e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MegaFiers/MegaLiner Scene using Guid(7043731714088be4890004747092e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1659db8c25f5db946a90a9b2efd12e8d') in 0.010954 seconds 
-  Import took 0.020448 seconds .
+  path: Assets/textArchitecture/fonts/CJKjp-Regular SDF.asset
+  artifactKey: Guid(798598178ae6fd54185787c6a8046bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textArchitecture/fonts/CJKjp-Regular SDF.asset using Guid(798598178ae6fd54185787c6a8046bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70568d48296994bbd8770c5f8feeb01b') in 0.130774 seconds 
+  Import took 0.140440 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.565067 seconds.
-  path: Assets/MegaFiers/MegaLiner Scene
-  artifactKey: Guid(7043731714088be4890004747092e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MegaFiers/MegaLiner Scene using Guid(7043731714088be4890004747092e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1659db8c25f5db946a90a9b2efd12e8d') in 0.002830 seconds 
-  Import took 0.009224 seconds .
+  Time since last request: 0.000285 seconds.
+  path: Assets/textArchitecture/fonts/NotoSansSC-Regular.otf
+  artifactKey: Guid(a3278cbc021cd5943b90f6eb1ddd012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textArchitecture/fonts/NotoSansSC-Regular.otf using Guid(a3278cbc021cd5943b90f6eb1ddd012f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a5e6da16c24bc075c8803b8b3ba40b') in 0.024663 seconds 
+  Import took 0.030773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/textArchitecture/fonts/NotoSans-Regular SDF.asset
+  artifactKey: Guid(2ec7799fe41c6b64489d6dea458e1e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textArchitecture/fonts/NotoSans-Regular SDF.asset using Guid(2ec7799fe41c6b64489d6dea458e1e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e75aaedb2d079f2ab319e27d88f645f') in 0.043099 seconds 
+  Import took 0.050059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.364517 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/American Captain SDF.asset
+  artifactKey: Guid(8ee679b4075c29a46bd9da5e6050480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/American Captain SDF.asset using Guid(8ee679b4075c29a46bd9da5e6050480c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c9c7bf1cb1cdf29be1c369a498ecfd') in 0.086105 seconds 
+  Import took 0.091961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/impact.ttf
+  artifactKey: Guid(0f916a728ac605644a9329b03dbed1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/impact.ttf using Guid(0f916a728ac605644a9329b03dbed1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a72c5693ed8dfd5305e9df931a720f') in 0.017568 seconds 
+  Import took 0.022566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/LAFFAYETTE_COMIC_PRO.TTF
+  artifactKey: Guid(2efe2e96446da7f4b99fc1e1dad4557c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/LAFFAYETTE_COMIC_PRO.TTF using Guid(2efe2e96446da7f4b99fc1e1dad4557c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb41e09a88237fb83cd1565786bc2772') in 0.022861 seconds 
+  Import took 0.028526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/SPACP___.TTF
+  artifactKey: Guid(f69903fb79e669048842768298ff6da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/SPACP___.TTF using Guid(f69903fb79e669048842768298ff6da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca7176e314286438d90a9e8041751fe') in 0.016247 seconds 
+  Import took 0.021467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/DYMAXION.TTF
+  artifactKey: Guid(bddd6d90e82151b498a2c799572a356f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/DYMAXION.TTF using Guid(bddd6d90e82151b498a2c799572a356f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00881c97675bc63e932793723598a1f6') in 0.020886 seconds 
+  Import took 0.026556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/impact SDF 1.asset
+  artifactKey: Guid(f2d3eccd5848cf8429f599d2e771cdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/impact SDF 1.asset using Guid(f2d3eccd5848cf8429f599d2e771cdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbdd6aecc19bc0a0cf7a0d838eb5dda7') in 0.086455 seconds 
+  Import took 0.091890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/FORTE SDF.asset
+  artifactKey: Guid(3e388ef29f7ac5c4e8242c46d23b303c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/FORTE SDF.asset using Guid(3e388ef29f7ac5c4e8242c46d23b303c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df9baf196e600fc8b46f10af26b23c8') in 0.030625 seconds 
+  Import took 0.036167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/American Captain.ttf
+  artifactKey: Guid(45dd5a85ae06d19449827705bfff41f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/American Captain.ttf using Guid(45dd5a85ae06d19449827705bfff41f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8b02d5a38dd0cadf81c8f349cb75a8') in 0.021241 seconds 
+  Import took 0.026658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/DYMAXION SDF.asset
+  artifactKey: Guid(1bacde24d2991dc4da545f3f763e16f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/DYMAXION SDF.asset using Guid(1bacde24d2991dc4da545f3f763e16f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92499d534669232fb694c04fcd6edd52') in 0.202956 seconds 
+  Import took 0.208537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/impact SDF.asset
+  artifactKey: Guid(33749e4d5e447a048877798d6787fb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/impact SDF.asset using Guid(33749e4d5e447a048877798d6787fb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731951da3d379f7f2df126d815347e23') in 0.022947 seconds 
+  Import took 0.027980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/FORTE.TTF
+  artifactKey: Guid(d51a552f59ba5174383f88abdf6da16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/FORTE.TTF using Guid(d51a552f59ba5174383f88abdf6da16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5412795bdefef2b054561d0e61963f2d') in 0.020472 seconds 
+  Import took 0.025637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Fonts/SPACP___ SDF.asset
+  artifactKey: Guid(fadf9249c585954438c3c1589a859d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Fonts/SPACP___ SDF.asset using Guid(fadf9249c585954438c3c1589a859d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2104570777073912db63a7025ea9654') in 0.019408 seconds 
+  Import took 0.024768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.861307 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Scenes/demo scene.unity
+  artifactKey: Guid(1ae1616f06a99244098ca7c85435c382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Scenes/demo scene.unity using Guid(1ae1616f06a99244098ca7c85435c382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f035bd203d540fe9ddb061dfc6af6da') in 0.020445 seconds 
+  Import took 0.028008 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008778 seconds.
+Registered in 0.009390 seconds.
 Begin MonoManager ReloadAssembly
-InvalidOperationException: Burst failed to compile the function pointer `Int32 DoGetCSRTrampoline()`
-  at Unity.Burst.BurstCompiler.Compile[T] (T delegateObj, System.Boolean isFunctionPointer) [0x0014f] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:227 
-  at Unity.Burst.BurstCompiler.CompileFunctionPointer[T] (T delegateMethod) [0x00006] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:119 
-  at Unity.Burst.Intrinsics.X86.CompileManagedCsrAccessors () [0x00000] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\Intrinsics\x86\Csr.cs:245 
-  at Unity.Burst.Editor.BurstLoader..cctor () [0x00161] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Editor\BurstLoader.cs:206 
-Rethrow as TypeInitializationException: The type initializer for 'Unity.Burst.Editor.BurstLoader' threw an exception.
-  at (wrapper delegate-invoke) <Module>.invoke_void_object_EventArgs(object,System.EventArgs)
-  at System.AppDomain.DoDomainUnload () [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
+Error: Could not load signature of UnityEditor.XR.ARKit.XcodeAssetCatalog:WriteAndAddToPBXProject due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 
-(Filename: Library/PackageCache/com.unity.burst@1.4.4/Runtime/BurstCompiler.cs Line: 227)
+Unloading broken assembly Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll, this assembly can cause crashes in the runtime
 
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -209,11 +312,27 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 [Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
 
-System.InvalidOperationException: Burst failed to compile the function pointer `Int32 DoGetCSRTrampoline()`
-  at Unity.Burst.BurstCompiler.Compile[T] (T delegateObj, System.Boolean isFunctionPointer) [0x0014f] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:227 
-  at Unity.Burst.BurstCompiler.CompileFunctionPointer[T] (T delegateMethod) [0x00006] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\BurstCompiler.cs:119 
-  at Unity.Burst.Intrinsics.X86.CompileManagedCsrAccessors () [0x00000] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Runtime\Intrinsics\x86\Csr.cs:245 
-  at Unity.Burst.Editor.BurstLoader..cctor () [0x00161] in C:\ProjectWorking\InteractiveClub\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.burst@1.4.4\Editor\BurstLoader.cs:206 
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.XR.Management.EditorUtilities:CreateScriptableObjectInstance (string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs:102)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,string,string) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:183)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage,UnityEditor.XR.Management.Metadata.IXRPackageMetadata) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:130)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage) (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:118)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:BeginPackageInitialization () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:87)
+UnityEditor.XR.Management.XRPackageInitializationBootstrap:.cctor () (at Library/PackageCache/com.unity.xr.management@4.0.7/Editor/XRPackageInitialization.cs:50)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.xr.management@4.0.7/Editor/EditorUtilities.cs line 102]
+
+UnityEngine.UnityException: Creating asset at path Assets\XR\Settings\AR Kit Settings.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at UnityEditor.XR.Management.EditorUtilities.CreateScriptableObjectInstance (System.String typeName, System.String path) [0x00031] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\EditorUtilities.cs:102 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitializeSettingsFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage package, System.String packageName, System.String settingsType) [0x0002e] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:183 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitializePackageFromMetadata (UnityEditor.XR.Management.Metadata.IXRPackage package, UnityEditor.XR.Management.Metadata.IXRPackageMetadata packageMetadata) [0x00017] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:130 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.InitPackage (UnityEditor.XR.Management.Metadata.IXRPackage package) [0x00030] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:118 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap.BeginPackageInitialization () [0x0008f] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:87 
+  at UnityEditor.XR.Management.XRPackageInitializationBootstrap..cctor () [0x00030] in C:\Users\Jiyuan\Desktop\Text-Architecture\textArchitecture\Library\PackageCache\com.unity.xr.management@4.0.7\Editor\XRPackageInitialization.cs:50 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -221,42 +340,43 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.838 seconds
+- Completed reload, in  1.587 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1838ms)
-		BeginReloadAssembly (135ms)
+	ReloadAssembly (1587ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1643ms)
-			LoadAssemblies (103ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1393ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (329ms)
+			SetupTypeCache (291ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (1026ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (845ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (780ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
-				AfterProcessingInitializeOnLoad (31ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (691ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4540 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 186.1 MB.
-System memory in use after: 185.7 MB.
+Unloading 4544 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.3 MB.
+System memory in use after: 186.9 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5065.
-Total: 12.632900 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.211100 ms MarkObjects: 11.561900 ms  DeleteObjects: 0.499500 ms)
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5116.
+Total: 10.609100 ms (FindLiveObjects: 0.424500 ms CreateObjectMapping: 0.185600 ms MarkObjects: 9.700400 ms  DeleteObjects: 0.297900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -265,8 +385,295 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 61.284317 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Scenes
+  artifactKey: Guid(1ef37847ce3ad404dac35cb94d144820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Scenes using Guid(1ef37847ce3ad404dac35cb94d144820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e794c881a08a555aa94b3041383b7d7') in 0.008849 seconds 
+  Import took 0.015157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.188388 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Scenes/worldPath.unity
+  artifactKey: Guid(ef32c91b8c1e352429f88c1840fed685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Scenes/worldPath.unity using Guid(ef32c91b8c1e352429f88c1840fed685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6708a63365b07df1eec19f5a8709a734') in 0.021408 seconds 
+  Import took 0.027550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.803780 seconds.
+  path: Assets/MegaFiers/Scripts/MegaFiers/Editor/Modifiers/MegaPathDeformEditor.cs
+  artifactKey: Guid(16c4538e4051f0a4cbfc5cec76eac022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/Scripts/MegaFiers/Editor/Modifiers/MegaPathDeformEditor.cs using Guid(16c4538e4051f0a4cbfc5cec76eac022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a45687fb5c97f3b3d555b91ddfffd5') in 0.058742 seconds 
+  Import took 0.064587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.638379 seconds.
+  path: Assets/MegaFiers/Scripts/MegaFiers/Modifiers/MegaPathDeform.cs
+  artifactKey: Guid(614ed152f5a7f1846b4d03dc07006650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/Scripts/MegaFiers/Modifiers/MegaPathDeform.cs using Guid(614ed152f5a7f1846b4d03dc07006650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ba19269c5082bea1346a5f7a1c65d5') in 0.005613 seconds 
+  Import took 0.011435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.731452 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Prefabs/PressurisedSteam.prefab
+  artifactKey: Guid(61bb62591466c3649bdf4905822d72f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Prefabs/PressurisedSteam.prefab using Guid(61bb62591466c3649bdf4905822d72f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23529b8de715d579396867049e0bfd7b') in 1.565051 seconds 
+  Import took 1.570717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.290941 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Misc/Bounce.physicMaterial
+  artifactKey: Guid(1a98884085d3d63449affccb1e96f296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Misc/Bounce.physicMaterial using Guid(1a98884085d3d63449affccb1e96f296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa0b478d24d255dad83f5e8be5ef121') in 0.007296 seconds 
+  Import took 0.012889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Misc/MegaSkin.guiskin
+  artifactKey: Guid(afe5c58608cb01f439a3fbf973d19442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Misc/MegaSkin.guiskin using Guid(afe5c58608cb01f439a3fbf973d19442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999c8d08ad111cdab0ad6d5d6844d623') in 0.011325 seconds 
+  Import took 0.016620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.821927 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Attractor_Profiles/GameObject Profile 1.asset
+  artifactKey: Guid(d790d0b90e8fd0c46a3c5f7c9ff25392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Attractor_Profiles/GameObject Profile 1.asset using Guid(d790d0b90e8fd0c46a3c5f7c9ff25392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401431698014ba3eb6b74ab0599c81d0') in 1.079045 seconds 
+  Import took 1.084574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.603227 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/atlas sprite.png
+  artifactKey: Guid(4c5e76815e72716488f271eb7cb5c253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/atlas sprite.png using Guid(4c5e76815e72716488f271eb7cb5c253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691a3475f4f8894f692e58be11f1a3f1') in 0.073824 seconds 
+  Import took 0.079870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/moonliner atlas.png
+  artifactKey: Guid(419d94ae6cd7f3a46a89fe6991ec24b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/moonliner atlas.png using Guid(419d94ae6cd7f3a46a89fe6991ec24b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6819bd372defe35a244cf6763ad62ad') in 1.022530 seconds 
+  Import took 1.027675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/rocket 1024.png
+  artifactKey: Guid(13141f20b6fcdb74eb170a31f7f01e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/rocket 1024.png using Guid(13141f20b6fcdb74eb170a31f7f01e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45b887225b92ad3d87fd17b3edd49d2') in 0.087562 seconds 
+  Import took 0.093024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/rocket coloured.png
+  artifactKey: Guid(7d3311f06ad01e041856048b58079dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/rocket coloured.png using Guid(7d3311f06ad01e041856048b58079dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e5fe60db03d5f69fad444a87d8dca6') in 0.016206 seconds 
+  Import took 0.022419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/moonliner red.png
+  artifactKey: Guid(e2f75c57241124a4ebd0e0cf85a5fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/moonliner red.png using Guid(e2f75c57241124a4ebd0e0cf85a5fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19152bd5f2a98197cc1f687753c9d4a6') in 1.039085 seconds 
+  Import took 1.044599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/moonliner spec.png
+  artifactKey: Guid(eed93c14b8c61af44a25034103a7153c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/moonliner spec.png using Guid(eed93c14b8c61af44a25034103a7153c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7237c8ae57854111ed50f1f602d6eb23') in 1.083788 seconds 
+  Import took 1.088985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/burst.png
+  artifactKey: Guid(988337e98f37b71429430d2259c15e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/burst.png using Guid(988337e98f37b71429430d2259c15e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4948afaa16699fa4dfd3322af2739aa1') in 0.024709 seconds 
+  Import took 0.029790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/jobs.png
+  artifactKey: Guid(551dc5b8d689eb4498962d6b8cfd0145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/jobs.png using Guid(551dc5b8d689eb4498962d6b8cfd0145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381678a34513646e14e65db152d68361') in 0.024746 seconds 
+  Import took 0.030122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/base.png
+  artifactKey: Guid(4c11542359ebe40428581f5b9ba6f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/base.png using Guid(4c11542359ebe40428581f5b9ba6f7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d39f1f71118e9380548bbf7c17b534') in 0.257620 seconds 
+  Import took 0.262662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/smokeysteam.tif
+  artifactKey: Guid(76e25da1cefc7f446bcc43a70fb13a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/smokeysteam.tif using Guid(76e25da1cefc7f446bcc43a70fb13a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d5236eb745cccc4e8ea9b1f7df6a75') in 0.268509 seconds 
+  Import took 0.273532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/red sprite.png
+  artifactKey: Guid(0625fc386e1698a46b0eb062657377b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/red sprite.png using Guid(0625fc386e1698a46b0eb062657377b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9f095c5eb7f4d4e6f7c68f7e388dc0') in 0.019050 seconds 
+  Import took 0.024495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/douglas sprite.png
+  artifactKey: Guid(988ba6797a9a27b4090b6805ce0ea322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/douglas sprite.png using Guid(988ba6797a9a27b4090b6805ce0ea322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5cbaecdf3274c290d0f9fadbeda9db') in 0.016500 seconds 
+  Import took 0.021336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/moonliner douglas.png
+  artifactKey: Guid(3dd69c191ce35ae40b4a27fed458cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/moonliner douglas.png using Guid(3dd69c191ce35ae40b4a27fed458cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984074e17b551769e601aa3e2c7c94c2') in 0.960215 seconds 
+  Import took 0.965719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/douglas sprite.png
+  artifactKey: Guid(988ba6797a9a27b4090b6805ce0ea322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/douglas sprite.png using Guid(988ba6797a9a27b4090b6805ce0ea322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5cbaecdf3274c290d0f9fadbeda9db') in 0.014677 seconds 
+  Import took 0.020085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/MegaFiers/MegaLiner Scene/Textures/LensDirt03.png
+  artifactKey: Guid(c4590e300672fea4d8c6d424e6c158b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MegaFiers/MegaLiner Scene/Textures/LensDirt03.png using Guid(c4590e300672fea4d8c6d424e6c158b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576212e51e96ddc01778cedd278f7cde') in 1.010590 seconds 
+  Import took 1.016381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.430935 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Factory/FBX/55Gal_Drum_FY001.fbx
+  artifactKey: Guid(8644f4138843e9a40b7d0ad3b92e366d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Factory/FBX/55Gal_Drum_FY001.fbx using Guid(8644f4138843e9a40b7d0ad3b92e366d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43093de2498491a58ee6d0728e901322') in 0.290031 seconds 
+  Import took 0.295835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Bedroom/FBX/AlarmClock_BR001.fbx
+  artifactKey: Guid(ca7535859821de8418382453fe167052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Bedroom/FBX/AlarmClock_BR001.fbx using Guid(ca7535859821de8418382453fe167052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9df4bde1fe38a92f6aa396787afd37') in 0.015839 seconds 
+  Import took 0.020883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Faces/Amy.playable
+  artifactKey: Guid(1d74ae577149fec479d10968d697b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Faces/Amy.playable using Guid(1d74ae577149fec479d10968d697b303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbca24eb8c177888035cfeb2e351164') in 0.094267 seconds 
+  Import took 0.101808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Museum/FBX/ApolloCommand_MM001.fbx
+  artifactKey: Guid(5109e1990cb985f45a88b94b966b835d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Museum/FBX/ApolloCommand_MM001.fbx using Guid(5109e1990cb985f45a88b94b966b835d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a20ed09ac85e3da17ba53c635cb9f42') in 0.024639 seconds 
+  Import took 0.030156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Faces/Video/Amy.mp4
+  artifactKey: Guid(9f8355c5b7689a54c894b571b285bafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Faces/Video/Amy.mp4 using Guid(9f8355c5b7689a54c894b571b285bafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cac07264722bba2319a398d45716e3a') in 0.007673 seconds 
+  Import took 0.013138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Factory/FBX/Air_Compressor_FY001.fbx
+  artifactKey: Guid(648b87cc183dc964fa64305e8e015145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Factory/FBX/Air_Compressor_FY001.fbx using Guid(648b87cc183dc964fa64305e8e015145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0702a9e8fe626077a8cb8b8a1ab925fc') in 0.021183 seconds 
+  Import took 0.026227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Factory/Prefab/Air_Compressor_FY001.prefab
+  artifactKey: Guid(180438cd81d5ca043a5bc11c56b9b6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Factory/Prefab/Air_Compressor_FY001.prefab using Guid(180438cd81d5ca043a5bc11c56b9b6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab4fa15372c530628f62268066d215a') in 0.124360 seconds 
+  Import took 0.129676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Museum/FBX/ApolloCommand_Display_MM001.fbx
+  artifactKey: Guid(a900dfce881475446a65585779c71649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Museum/FBX/ApolloCommand_Display_MM001.fbx using Guid(a900dfce881475446a65585779c71649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1104f230924716ff77832f4fdb6ac4c') in 0.026331 seconds 
+  Import took 0.031654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Bedroom/Prefab/AlarmClock_BR001.prefab
+  artifactKey: Guid(3e889a4ce8583a145b82242656326240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Bedroom/Prefab/AlarmClock_BR001.prefab using Guid(3e889a4ce8583a145b82242656326240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e159fdbe8108c54d080afedf2e59e20f') in 0.012082 seconds 
+  Import took 0.017948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Factory/Prefab/55Gal_Drum_FY001.prefab
+  artifactKey: Guid(d40e8722409808f4db9a299149ff8df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Factory/Prefab/55Gal_Drum_FY001.prefab using Guid(d40e8722409808f4db9a299149ff8df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c308c189d12b70b40980efdefc7352e7') in 0.010747 seconds 
+  Import took 0.016458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/MARS/Content/SimulationEnvironments/Museum/Prefab/ApolloCommand_Display_MM001.prefab
+  artifactKey: Guid(be98482ab16706f45a6fab7fad624247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MARS/Content/SimulationEnvironments/Museum/Prefab/ApolloCommand_Display_MM001.prefab using Guid(be98482ab16706f45a6fab7fad624247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1590a103c2ac896a050f87d71dbc5ba') in 0.016751 seconds 
+  Import took 0.022424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 651.659706 seconds.
+  path: Assets/textArchitecture/Text (TMP) 1.prefab
+  artifactKey: Guid(c8f6a16c5805be342be0b2d5140fd9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textArchitecture/Text (TMP) 1.prefab using Guid(c8f6a16c5805be342be0b2d5140fd9d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c410ef4daa8fe41c6ada750bb9768bd') in 0.055060 seconds 
+  Import took 0.062976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.074253 seconds.
+  path: Assets/textArchitecture/script
+  artifactKey: Guid(e1ee99b5bb48c41689e5c0481355c85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/textArchitecture/script using Guid(e1ee99b5bb48c41689e5c0481355c85f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fe9fcd16455e89f40581c5464f1076') in 0.004617 seconds 
+  Import took 0.010676 seconds .
+
