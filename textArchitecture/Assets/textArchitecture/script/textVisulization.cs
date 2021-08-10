@@ -7,6 +7,7 @@ using SimpleJSON;
 using CI.HttpClient;
 using System.Collections;
 using UnityEngine.Rendering.PostProcessing;
+using MegaFiers;
 public class textVisulization : MonoBehaviour
 {   //text control
     public textControHTTP textControl;
@@ -17,11 +18,14 @@ public class textVisulization : MonoBehaviour
     public GameObject effectPrefab;
     GameObject[] textObjects;
     public int resolution;
-
+    public GameObject pathParent;
+    public GameObject cameraObject;
+    
     //public TextAsset jsonFile;
     //public string[] jsonArray;
     //public ListItem items;
     JSONNode items;
+
     //int index;
     public float architectureScale;
     public Slider ArchSliderScale;
@@ -31,6 +35,12 @@ public class textVisulization : MonoBehaviour
     public Slider textSliderScale;
     //text;
     TextMeshPro textmeshPro;
+    MegaWorldPathDeform textmeshProMega;
+    public MegaShape megaShape;
+    public MegaShape megaShape1;
+    public MegaShape megaShape2;
+    public MegaShape megaShape3;
+    public MegaShape megaShape4;
     public Vector3[] prefebPosition;
     public Quaternion[] prefebRotation;
     public Vector3[] prefebScale;
@@ -169,27 +179,37 @@ public class textVisulization : MonoBehaviour
 
 
     }
-
+    
     void textVisualizer()
     {
         if (items != null)
         {
+            //Destroy(textObjects[resolution-1]);
             //resolution = items["textDatas"].Count;
             //print(items["textDatas"]);
             for (int i = 0; i < resolution; i++)
             {
                 textmeshPro = textObjects[i].GetComponent<TextMeshPro>();
+                
                 if (items["textDatas"][i] != null)
                 {
                     //print(items["textDatas"][0]["Input"]);
                     //textmeshPro.SetText(items["textDatas"][i]["Input"]);
-                    //textmeshPro.SetText(items["textDatas"][i]["randonText"]);
-                    textmeshPro.SetText(items["textDatas"][i]["originalText"]);
+                    textmeshPro.SetText(items["textDatas"][i]["randonText"]);
+                    //textmeshPro.SetText(items["textDatas"][i]["originalText"]);
                     
                     prefebPosition[i] = new Vector3(items["textDatas"][i]["X"] * architectureScale, items["textDatas"][i]["Y"]* architectureScaleY, items["textDatas"][i]["Z"] * architectureScale);
                     prefebRotation[i] = Quaternion.Euler(0, items["textDatas"][i]["rY"] * 360f, 0);
                     prefebScale[i] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
+
                     //print(items["textDatas"][resolution]["Input"]);
+                    textmeshProMega = textObjects[i].GetComponent<MegaWorldPathDeform>();
+                    //textmeshProMega.path = megaShape;
+                    textmeshProMega.percent = items["textDatas"][i]["X"] * 100f;
+                    textmeshProMega.gizmoPos = new Vector3(items["textDatas"][i]["X"]*0.2f, items["textDatas"][i]["Y"]*0.3f, items["textDatas"][i]["Z"]*0.2f);
+                    pathParent.transform.localPosition = new Vector3(0, architectureScaleY, 0);
+                    pathParent.transform.localScale = new Vector3(architectureScale,architectureScale,architectureScale);
+                    textmeshProMega.gizmoScale = new Vector3(textScale,textScale,textScale);
 
 
                 }
@@ -197,33 +217,45 @@ public class textVisulization : MonoBehaviour
                 {
                     textmeshPro.SetText("");
                 }
+                
+               
+
 
                 //textObjects[i].GetComponent<Transform>().localPosition = prefebPosition[i];
-                textObjects[i].GetComponent<Transform>().localPosition = prefebPosition[i];
-                textObjects[i].GetComponent<Transform>().localRotation = prefebRotation[i];
-                textObjects[i].GetComponent<Transform>().localScale = prefebScale[i];
-
+                //textObjects[i].GetComponent<Transform>().localPosition = prefebPosition[i];
+                //textObjects[i].GetComponent<Transform>().localRotation = prefebRotation[i];
+                //textObjects[i].GetComponent<Transform>().localScale = prefebScale[i];
+                
                 if (items["textDatas"][i]["Mood"] == 4)
                 {
                     
                     textmeshPro.color = new Color32(167, 222, 95, 255);
+                    textmeshProMega.path = megaShape4;
                 }
                 else if (items["textDatas"][i]["Mood"] == 3)
                 {
                     textmeshPro.color = new Color32(245, 215, 66, 255);
-                    
+                    textmeshProMega.path = megaShape3;
+
                 }
                 else if (items["textDatas"][i]["Mood"] == 2)
                 {
                     textmeshPro.color = new Color32(240, 153, 72, 255);
+                    textmeshProMega.path = megaShape2;
                 }
                 else if (items["textDatas"][i]["Mood"] == 1)
                 {
                     textmeshPro.color = new Color32(255, 82, 82, 255);
+                    textmeshProMega.path = megaShape1;
                 }
                 else if (items["textDatas"][i]["Mood"] == 0)
                 {
                     textmeshPro.color = new Color32(115, 47, 47, 255);
+                    textmeshProMega.path = megaShape;
+                }
+                else
+                {
+                    textmeshProMega.path = megaShape;
                 }
             }
 
@@ -267,16 +299,18 @@ public class textVisulization : MonoBehaviour
             int count = items["textDatas"].Count;
             //yield return count != items["textDatas"].Count;
             yield return new WaitUntil(() => count != items["textDatas"].Count);
-            prefebPosition[count] = new Vector3(items["textDatas"][count]["X"] * architectureScale, items["textDatas"][count]["Y"]* architectureScaleY, items["textDatas"][count]["Z"] * architectureScale);
+            //prefebPosition[count] = new Vector3(items["textDatas"][count]["X"] * architectureScale, items["textDatas"][count]["Y"]* architectureScaleY, items["textDatas"][count]["Z"] * architectureScale);
+            prefebPosition[count] = pathParent.transform.localPosition;
             prefebRotation[count] = Quaternion.Euler(0, items["textDatas"][count]["rY"] * 360f, 0);
-            prefebScale[count] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
+            //prefebScale[count] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
+            prefebScale[count] = new Vector3(1f, 1f, 1f)/3f;
             GameObject newTextObject = Instantiate(effectPrefab);newTextObject.GetComponent<Transform>().SetParent(transform);
             newTextObject.GetComponent<Transform>().SetParent(transform);
             newTextObject.transform.localPosition = prefebPosition[count];
-            newTextObject.transform.localRotation = prefebRotation[count];
+            //newTextObject.transform.localRotation = prefebRotation[count];
             newTextObject.transform.localScale = prefebScale[count]; 
             
-            newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["Input"]);
+            newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["randonText"]);
             newTextObject.GetComponent<TextMeshPro>().color = new Color32(255, 255, 255, 255);
             pVolume.weight = 1;
             newTextObject.layer = 6;

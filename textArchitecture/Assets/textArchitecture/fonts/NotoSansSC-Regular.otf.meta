@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3278cbc021cd5943b90f6eb1ddd012f
+guid: 7f357a6511b78f0458ca7404f4692774
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Noto Sans SC
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a3278cbc021cd5943b90f6eb1ddd012f, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
