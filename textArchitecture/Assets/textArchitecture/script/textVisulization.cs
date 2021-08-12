@@ -16,6 +16,7 @@ public class textVisulization : MonoBehaviour
     /// </summary>
     public GameObject myPrefab;
     public GameObject effectPrefab;
+    public GameObject UITextPrefab;
     GameObject[] textObjects;
     public int resolution;
     public GameObject pathParent;
@@ -57,6 +58,7 @@ public class textVisulization : MonoBehaviour
         StartCoroutine(ReadJsonHTTP());
         StartCoroutine(initialText());
         StartCoroutine(newInstanceEffect());
+        //StartCoroutine(textVisulizationDelay());
 
 
 
@@ -147,9 +149,9 @@ public class textVisulization : MonoBehaviour
         //textScale = textControl.textScale;
         if(pVolume.weight > 0)
         {
-            pVolume.weight = pVolume.weight - 0.004f;
+            pVolume.weight = pVolume.weight - 0.007f;
         }
-        print(pVolume.weight);
+        //print(pVolume.weight);
 
     }
 
@@ -179,7 +181,18 @@ public class textVisulization : MonoBehaviour
 
 
     }
-    
+
+
+    IEnumerator textVisulizationDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        while (true)
+        {
+            textVisualizer();
+        }
+        
+        //yield return new WaitForSeconds(0.5f);
+    }
     void textVisualizer()
     {
         if (items != null)
@@ -190,8 +203,8 @@ public class textVisulization : MonoBehaviour
             for (int i = 0; i < resolution; i++)
             {
                 textmeshPro = textObjects[i].GetComponent<TextMeshPro>();
-                
-                if (items["textDatas"][i] != null)
+                string textLength = items["textDatas"][i]["randonText"];
+                if (items["textDatas"][i] != null && textLength.Length>5)
                 {
                     //print(items["textDatas"][0]["Input"]);
                     //textmeshPro.SetText(items["textDatas"][i]["Input"]);
@@ -304,16 +317,54 @@ public class textVisulization : MonoBehaviour
             prefebRotation[count] = Quaternion.Euler(0, items["textDatas"][count]["rY"] * 360f, 0);
             //prefebScale[count] = new Vector3(0.01f, 0.01f, 0.01f) * textScale;
             prefebScale[count] = new Vector3(1f, 1f, 1f)/3f;
-            GameObject newTextObject = Instantiate(effectPrefab);newTextObject.GetComponent<Transform>().SetParent(transform);
+            GameObject newTextObject = Instantiate(effectPrefab);
+            GameObject UITextObject = Instantiate(UITextPrefab);
+            UITextObject.transform.SetParent(cameraObject.transform);
+
+            /*
+            newTextObject.GetComponent<Transform>().SetParent(transform);
             newTextObject.GetComponent<Transform>().SetParent(transform);
             newTextObject.transform.localPosition = prefebPosition[count];
             //newTextObject.transform.localRotation = prefebRotation[count];
             newTextObject.transform.localScale = prefebScale[count]; 
-            
+            */
+            UITextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["randonText"]);
+            UITextObject.GetComponent<RectTransform>().localPosition = new Vector3(0.140000001f, 2.46000004f, 11.04f);
+            UITextObject.GetComponent<RectTransform>().localEulerAngles = new Vector3(358.529999f, 359.190002f, 8.34037783e-10f);
             newTextObject.GetComponent<TextMeshPro>().SetText(items["textDatas"][count]["randonText"]);
             newTextObject.GetComponent<TextMeshPro>().color = new Color32(255, 255, 255, 255);
+
+            newTextObject.GetComponent<MegaWorldPathDeform>().percent = items["textDatas"][count]["X"] * 100f;
+            if (items["textDatas"][count]["Mood"] == 4)
+            {
+
+                //textmeshPro.color = new Color32(167, 222, 95, 255);
+                newTextObject.GetComponent<MegaWorldPathDeform>().path = megaShape4;
+            }
+            else if (items["textDatas"][count]["Mood"] == 3)
+            {
+                //textmeshPro.color = new Color32(245, 215, 66, 255);
+                newTextObject.GetComponent<MegaWorldPathDeform>().path = megaShape3;
+
+            }
+            else if (items["textDatas"][count]["Mood"] == 2)
+            {
+                //textmeshPro.color = new Color32(240, 153, 72, 255);
+                newTextObject.GetComponent<MegaWorldPathDeform>().path = megaShape2;
+            }
+            else if (items["textDatas"][count]["Mood"] == 1)
+            {
+                //textmeshPro.color = new Color32(255, 82, 82, 255);
+                newTextObject.GetComponent<MegaWorldPathDeform>().path = megaShape1;
+            }
+            else if (items["textDatas"][count]["Mood"] == 0)
+            {
+                //textmeshPro.color = new Color32(115, 47, 47, 255);
+                newTextObject.GetComponent<MegaWorldPathDeform>().path = megaShape;
+            }
             pVolume.weight = 1;
             newTextObject.layer = 6;
+            UITextObject.layer = 6; 
             print(pVolume.weight);
             //yield return new WaitForSeconds(0.1f);
             //pVolume.weight = pVolume.weight - 0.1f;
@@ -321,6 +372,7 @@ public class textVisulization : MonoBehaviour
             //pVolume.weight = 0;
             //pVolume.weight = 0;
             Destroy(newTextObject);
+            Destroy(UITextObject);
             /*
             yield return new WaitForSeconds(2f);
             pVolume.weight = 0.8f;
@@ -334,7 +386,7 @@ public class textVisulization : MonoBehaviour
             pVolume.weight = 0;
             Destroy(newTextObject);
             */
-            
+
         }
         
 

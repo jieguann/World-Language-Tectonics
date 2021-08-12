@@ -33,7 +33,8 @@ public WsClient client;
     /// </summary>
     private void Awake()
     {
-        server = "ws://" + host + ":" + port;
+        //server = "ws://" + host + ":" + port;
+        server = "wss://" + host;
         client = new WsClient(server);
 
         // Messaging
