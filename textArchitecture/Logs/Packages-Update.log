@@ -72,3 +72,11 @@ The following packages were added:
   com.unity.burst@1.4.4
   com.unity.jobs@0.2.10-preview.13
   com.unity.probuilder@4.5.0
+
+=== Mon Aug 16 14:18:10 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.visualstudio from version 2.0.9 to 2.0.11
