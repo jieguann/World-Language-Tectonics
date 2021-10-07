@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7531819558009625667}
   - component: {fileID: 7531819558009625666}
   - component: {fileID: 7531819558009625677}
-  - component: {fileID: 8003455227052640070}
-  - component: {fileID: 8488387050493013716}
+  - component: {fileID: -3623416650221513277}
+  - component: {fileID: -3666910388278964839}
   m_Layer: 0
   m_Name: Text (TMP) 1
   m_TagString: Untagged
@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7531819558009625676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15168}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.12442, y: 0.12442, z: 0.12442}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.35136, y: -4.38}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7531819558009625666
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ong xanh th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y."
+  m_text: "ong xanh th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y.ong xanh
+    th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e2bbbf57e343fa47899f34d4eb5c713, type: 2}
   m_sharedMaterial: {fileID: -6629053171690661514, guid: 1e2bbbf57e343fa47899f34d4eb5c713, type: 2}
@@ -127,13 +128,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -83.04001, w: 0}
+  m_margin: {x: 0, y: 0, z: 4.031227, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!114 &8003455227052640070
+--- !u!114 &-3623416650221513277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,8 +189,8 @@ MonoBehaviour:
   cachedMesh: {fileID: 0}
   InvisibleUpdate: 0
   bbox:
-    m_Center: {x: -0.69956636, y: 0.96334374, z: 0}
-    m_Extent: {x: 9.279079, y: 0.96334374, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   NormalMethod: 1
   TangentMethod: 0
   recalcbounds: 0
@@ -200,8 +201,8 @@ MonoBehaviour:
   DrawGizmos: 1
   mesh: {fileID: 0}
   mods:
-  - {fileID: 8488387050493013716}
-  UpdateMesh: -1
+  - {fileID: -3666910388278964839}
+  UpdateMesh: 0
   dirtyChannels: 0
   sourceObj: {fileID: 0}
   mapping: []
@@ -214,7 +215,7 @@ MonoBehaviour:
   groupEnabled: 1
   group: []
   colliderObject: {fileID: 0}
-  tmproObj: {fileID: 7531819558009625677}
+  tmproObj: {fileID: 0}
   showParams: 0
   quickEdit: 1
   quickEditSize: 200
@@ -232,7 +233,7 @@ MonoBehaviour:
   blendScrollpos: {x: 0, y: 0}
   blendIndex: 0
   subDivide: 0
---- !u!114 &8488387050493013716
+--- !u!114 &-3666910388278964839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,32 +249,32 @@ MonoBehaviour:
   DisplayGizmo: 1
   Offset: {x: 0, y: 0, z: 0}
   gizmoPos: {x: 0, y: 0, z: 0}
-  gizmoRot: {x: 0, y: 95.06, z: 0}
-  gizmoScale: {x: 0.1, y: 0.1, z: 0.1}
+  gizmoRot: {x: 0, y: 0, z: 0}
+  gizmoScale: {x: 1, y: 1, z: 1}
   gizCol1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   gizCol2: {r: 0, g: 1, b: 0, a: 1}
   bbox:
     center: {x: 0, y: 0, z: 0}
-    min: {x: -9.978645, y: 0, z: 0}
-    max: {x: 8.579514, y: 1.9266875, z: 0}
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
   checkCorners:
-  - {x: -5.7919216, y: 1.8882703, z: 0}
-  - {x: 1.198031, y: 0.365797, z: 0}
-  - {x: -3.9026244, y: 1.4317024, z: 0}
-  - {x: -8.115191, y: 1.9012948, z: 0}
-  - {x: -0.41184568, y: 0.9367243, z: 0}
-  - {x: 8.529613, y: 0.19957228, z: 0}
-  - {x: 4.682687, y: 0.36818245, z: 0}
-  - {x: -7.229582, y: 0.17006794, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   corners:
-  - {x: -9.978645, y: 0, z: 0}
-  - {x: -9.978645, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 0, z: 0}
-  - {x: -9.978645, y: 0, z: 0}
-  - {x: -9.978645, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   steps: 50
   valid: 0
   instance: {fileID: 0}
@@ -282,7 +283,7 @@ MonoBehaviour:
   displaychans: 10
   Label: 
   MaxLOD: 0
-  showModParams: 1
+  showModParams: 0
   showParams: 1
   alwaysChanging: 0
   prepared: 0
@@ -290,29 +291,29 @@ MonoBehaviour:
   stretch: 1
   twist: 0
   rotate: 0
-  axis: 2
+  axis: 0
   flip: 0
   path: {fileID: 0}
   animate: 0
   speed: 1
   tangent: 1
   mat:
-    e00: 25.745998
+    e00: 0
     e01: 0
     e02: 0
-    e03: -0.00000007741437
+    e03: 0
     e10: 0
-    e11: 25.745998
+    e11: 0
     e12: 0
-    e13: -0.000000024755536
+    e13: 0
     e20: 0
     e21: 0
-    e22: 25.745998
-    e23: -0.000000042375177
+    e22: 0
+    e23: 0
     e30: 0
     e31: 0
     e32: 0
-    e33: 1
+    e33: 0
   UseTwistCurve: 0
   twistCurve:
     serializedVersion: 2
@@ -367,4 +368,4 @@ MonoBehaviour:
   curve: 0
   usedist: 0
   distance: 0
-  loopmode: 0
+  loopmode: 3

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 7531819558009625667}
   - component: {fileID: 7531819558009625666}
   - component: {fileID: 7531819558009625677}
-  - component: {fileID: 8003455227052640070}
-  - component: {fileID: 8488387050493013716}
   m_Layer: 0
   m_Name: TextEffect
   m_TagString: Untagged
@@ -28,7 +26,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7531819558009625676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15168}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.12442, y: 0.12442, z: 0.12442}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.35136, y: -4.38}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7531819558009625666
@@ -100,7 +98,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ong xanh th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y."
+  m_text: "ong xanh th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y.ong xanh
+    th\u0103m th\u1EB3m, kh\xF4ng m\u1ED9t g\u1EE3n m\xE2y."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e2bbbf57e343fa47899f34d4eb5c713, type: 2}
   m_sharedMaterial: {fileID: -6629053171690661514, guid: 1e2bbbf57e343fa47899f34d4eb5c713, type: 2}
@@ -127,8 +126,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 3
+  m_fontSizeBase: 3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -163,7 +162,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -83.04001, w: 0}
+  m_margin: {x: 0, y: 0, z: 4.031227, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -172,199 +171,3 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!114 &8003455227052640070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531819558009625676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6212cedefce630645b2a9099ddd52c6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalMesh: {fileID: 0}
-  cachedMesh: {fileID: 0}
-  InvisibleUpdate: 0
-  bbox:
-    m_Center: {x: -0.69956636, y: 0.96334374, z: 0}
-    m_Extent: {x: 9.279079, y: 0.96334374, z: 0}
-  NormalMethod: 1
-  TangentMethod: 0
-  recalcbounds: 0
-  recalcCollider: 0
-  dynamicMesh: 0
-  Enabled: 1
-  UpdateMode: 1
-  DrawGizmos: 1
-  mesh: {fileID: 0}
-  mods:
-  - {fileID: 8488387050493013716}
-  UpdateMesh: -1
-  dirtyChannels: 0
-  sourceObj: {fileID: 0}
-  mapping: []
-  restorekeep: 0
-  indexmap: 
-  newmap: 
-  autoDisable: 1
-  noUpdate: 0
-  showGroup: 0
-  groupEnabled: 1
-  group: []
-  colliderObject: {fileID: 0}
-  tmproObj: {fileID: 7531819558009625677}
-  showParams: 0
-  quickEdit: 1
-  quickEditSize: 200
-  inGroup: 0
-  batchCount: 64
-  scrollpos: {x: 0, y: 0}
-  useColSection: 0
-  selectionWeight: 1
-  selectChannel: 0
-  noJobs: 0
-  changed: 0
-  blendShapeName: ' New Blend Shape'
-  blendShapeWeight: 0
-  showBlendShapes: 0
-  blendScrollpos: {x: 0, y: 0}
-  blendIndex: 0
-  subDivide: 0
---- !u!114 &8488387050493013716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531819558009625676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3b1bfcb9951d44ab61c6e7456ff274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ModEnabled: 1
-  DisplayGizmo: 1
-  Offset: {x: 0, y: 0, z: 0}
-  gizmoPos: {x: 0, y: 0, z: 0}
-  gizmoRot: {x: 0, y: 95.06, z: 0}
-  gizmoScale: {x: 0.1, y: 0.1, z: 0.1}
-  gizCol1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  gizCol2: {r: 0, g: 1, b: 0, a: 1}
-  bbox:
-    center: {x: 0, y: 0, z: 0}
-    min: {x: -9.978645, y: 0, z: 0}
-    max: {x: 8.579514, y: 1.9266875, z: 0}
-  checkCorners:
-  - {x: -5.7919216, y: 1.8882703, z: 0}
-  - {x: 1.198031, y: 0.365797, z: 0}
-  - {x: -3.9026244, y: 1.4317024, z: 0}
-  - {x: -8.115191, y: 1.9012948, z: 0}
-  - {x: -0.41184568, y: 0.9367243, z: 0}
-  - {x: 8.529613, y: 0.19957228, z: 0}
-  - {x: 4.682687, y: 0.36818245, z: 0}
-  - {x: -7.229582, y: 0.17006794, z: 0}
-  corners:
-  - {x: -9.978645, y: 0, z: 0}
-  - {x: -9.978645, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 0, z: 0}
-  - {x: -9.978645, y: 0, z: 0}
-  - {x: -9.978645, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 1.9266875, z: 0}
-  - {x: 8.579514, y: 0, z: 0}
-  steps: 50
-  valid: 0
-  instance: {fileID: 0}
-  limitchandisplay: 0
-  startchannel: 0
-  displaychans: 10
-  Label: 
-  MaxLOD: 0
-  showModParams: 1
-  showParams: 1
-  alwaysChanging: 0
-  prepared: 0
-  percent: 0
-  stretch: 1
-  twist: 0
-  rotate: 0
-  axis: 2
-  flip: 0
-  path: {fileID: 0}
-  animate: 0
-  speed: 1
-  tangent: 1
-  mat:
-    e00: 25.745998
-    e01: 0
-    e02: 0
-    e03: -0.00000007741437
-    e10: 0
-    e11: 25.745998
-    e12: 0
-    e13: -0.000000024755536
-    e20: 0
-    e21: 0
-    e22: 25.745998
-    e23: -0.000000042375177
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  UseTwistCurve: 0
-  twistCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseStretchCurve: 0
-  stretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Up: {x: 0, y: 1, z: 0}
-  curve: 0
-  usedist: 0
-  distance: 0
-  loopmode: 0
