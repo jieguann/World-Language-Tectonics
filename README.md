@@ -29,8 +29,36 @@ Communication has always been a fundamental part for the evolution of human soci
 <p align="center">sequence of language information </p>
 In information technology, text is a human-readable sequence of language information, containing characters and words they form that are encoded into computer-readable formats. Texts are one of the most basic building blocks constituting our (human) experience with information technology. Extending the scope of our expression and communication, and our presence beyond the physical dimension.
 
+赤						 red:           passion, warmth, energy\
+黄					   yellow:    spiritual , freedom, optimism \
+青						 azure:   obscurity, celestial, harmony\
+黑						 black: 	   absence, solemn, reflection
+
+
+## Four Color Theorem				      x(G *)  ≤   4
+>In mathematics, the four color theorem states that no more than four colors are required to color the regions of any map so that no two adjacent regions have the same color.
+It was the first major theorem to be proved using a computer. Initially, this proof was not accepted by all mathematicians because the computer-assisted proof was infeasible for a human to check by hand.                    From https://en.wikipedia.org/wiki/Four_color_theorem
+
+Through the four colors of red, yellow, azure (/blue), and black, semantic emotions and sentiments are arranged in a harmonious quaternary, embodying a collective spherical map of diversly translated expressions.
+
+## TECh
+
+### Augmented Reality
+As an augmented construct, the textual architecture is amidst somewhere between physical and virtual space, experienced through the lenses of Augmented Reality. Unique to each experience, to users and environment, to its distinct time and space.
+
+### Server and Client Communication
+The server and client framework setup aims to connect edge-end devices that enable data communication between users. The server is running the API of Google Translate and GPT-3 (from OpenAI) for processing the message sent by user. The AR app client is created with Unity 3D for two functionalities. On one hand, it provides a simple UI for input and sending the message to the server. On the other hand, the most crucial part is collecting the accumulation of messages from the server through HTTP requests for the visualization and 3D embodiment.
+
+
+## Afterword
+In the information age, an age of individual expressions, where most eager to express, communicate, and connect. We are willing to stand and uprear, more than ever, for those expressed values we hold so dear as our temporary truth.
+ Boundless from perpetuity, free from time, the immediacies of our emotions, a fleeing fraction of a feeling, would prompt us the proof of our very existence. Truth that is far from concepts of constancy and eternity, but rather ephemeral and intrinsic, naturally changing, unique to the time-space bounded to our perceptual present. 
+Such ephemeral truths are crucial for us, to comprehend such vastness 
+and empty space in between us, our surroundings, and ourselves.
+We yearn to find ourselves in others. 
+Despite all differences, we hope to find a sense of unity in such diversity. 
+
 
 ## Contributor
-Jie Guan  
-
+Jie Guan \  
 Connor YS Matla
