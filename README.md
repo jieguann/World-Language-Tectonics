@@ -11,6 +11,11 @@ A way to imagine Mixed Reality experience through collaborative virtual landmark
 <p align="center">complications of thoughts are lost in the multiplicity of language</p>
 <p align="center">a sense of connection is found in the different orbits of sentimental similarity</p>
 
+![Screenshot 2021-08-30 152353](https://user-images.githubusercontent.com/60665347/136729099-e33d4218-1cbe-4692-aae6-eb3159636802.png)
+
+<p align="center">like atomic structure in matter, or solar system in the galaxy.</p>
+<p align="center">Our words and thoughts orbits around the same core, the same earth, </p>
+<p align="center">to which our words and thoughts all share and gravitate to in obligation. </p>
 
 # Contributor
 Jie Guan  
