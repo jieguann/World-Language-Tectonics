@@ -60,5 +60,6 @@ Despite all differences, we hope to find a sense of unity in such diversity.
 
 
 ## Contributor
-Jie Guan \  
+Jie Guan
+
 Connor YS Matla
