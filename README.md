@@ -1,6 +1,6 @@
 <p align="center">complications of thought lost in the multiplex of language translations…</p>
 
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=IVN97IQRYgs)
 <img src="Media/Images/Picture3.gif" alt="GIF">
 
 # World-Language-Tectonics
