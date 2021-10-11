@@ -2,7 +2,9 @@
 
 
 <img src="Media/Images/Picture3.gif" alt="GIF">
+
 # World-Language-Tectonics
+
 A way to imagine Mixed Reality experience through collaborative virtual landmark. Where users will constitute collectively, a digital monument composed with an ongoing accumulation of text inputs, each a personal response to the same open question: “what’s your message to this WORLD?” The collected input will collaboratively formulate a structural archetype of texts, each randomly translated into a different language, and semantically classified by a deep learning language model (GPT-3) to fuse the text within 1 of 4 rings of sentiments. Each orbiting with a distinct color, revolving and gravitating around a central core (a white spherical structure composed with the word "WORLD" written in different languages). 
 
 ![Alt Text](https://github.com/jieguann/World-Language-Tectonics/blob/main/Media/Images/Picture2.png)
@@ -17,7 +19,18 @@ A way to imagine Mixed Reality experience through collaborative virtual landmark
 <p align="center">Our words and thoughts orbits around the same core, the same earth, </p>
 <p align="center">to which our words and thoughts all share and gravitate to in obligation. </p>
 
-# Contributor
+## Language
+
+<p align="center">the principal method of human communication</p>
+
+Communication has always been a fundamental part for the evolution of human society. We are in essence social animals, and in the long path of evolution, language became the most applicable and intrinsic medium for expression, and the transmission of information. It helps us to embody the vast environment of information for our minds to grasp and understand. 
+
+## TEXT
+<p align="center">sequence of language information </p>
+In information technology, text is a human-readable sequence of language information, containing characters and words they form that are encoded into computer-readable formats. Texts are one of the most basic building blocks constituting our (human) experience with information technology. Extending the scope of our expression and communication, and our presence beyond the physical dimension.
+
+
+## Contributor
 Jie Guan  
 
 Connor YS Matla
